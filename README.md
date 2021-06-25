@@ -1,4 +1,4 @@
-# zoom-login-statics
+# canvas-login-statics
 
 App template
 
@@ -12,8 +12,8 @@ Make sure you have [node.js](https://nodejs.org/en/) installed on your machine b
 Click the Use this template button and clone the repository.
 
 ```
-$ git clone git@github.com:uw-it-aca/zoom-login-statics.git
-$ cd zoom-login-statics
+$ git clone git@github.com:uw-it-aca/canvas-login-statics.git
+$ cd canvas-login-statics
 $ npm install
 
 ```
