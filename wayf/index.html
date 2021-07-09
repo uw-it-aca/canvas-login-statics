@@ -83,87 +83,61 @@
       <div class="form-signin" role="main" aria-labelledby="login_header">
         <h1 class="visually-hidden" id="login_header">UW Canvas login</h1>
         <form>
-          <p style="color: #fff; margin-top: 10px">
+          
+          <p>
             You are required to log into your account:
           </p>
-          <ul class="clearfix" style="margin-top: 30px; height: 45px">
-            <li
-              id="weblogin_logo"
-              class="pull-left"
-              style="width: 50%; list-style: none"
-            >
-              <label class="radio" style="margin-right: 30px" for="uw_login"
-                ><input
-                  type="radio"
-                  name="idp_option"
-                  id="uw_login"
-                  value="weblogin_option"
-                  checked="checked" /><img
+
+          <div class="d-flex justify-content-between">
+            <div class="form-check me-2 mb-0">
+              <input class="form-check-input" type="radio" name="idp_option" id="uw_login" value="weblogin_option" checked>
+              <label class="form-check-label" for="uw_login">
+                <img
                   src="/img/NetID-logo-reverse-200x80.png"
+                  class="img-fluid"
                   alt="Login with your UW NetID"
-              /></label>
-            </li>
-            <li
-              id="google_logo"
-              class="pull-right"
-              style="width: 50%; list-style: none"
-            >
-              <p id="social_login_container" style="color: #fff">
-                Don't have a UW NetID?<br /><a
-                  id="google_link"
-                  href="#"
-                  style="font-size: smaller"
-                  >Log in with a non-UW account</a
-                >
-              </p>
-              <label
-                id="google_option_label"
-                class="radio muted hide"
-                for="google_login"
-                ><input
-                  type="radio"
-                  name="idp_option"
-                  id="google_login"
-                  value="google_option" /><img
-                  src="/img/google-2015-logo-96x32.png"
-                  alt="login with your Google account"
-              /></label>
-            </li>
-          </ul>
-          <div class="clearfix" style="margin-top: 30px">
-            <div class="pull-left">
-              <label
-                class="checkbox"
-                style="
-                  color: #fff;
-                  margin-top: 5px;
-                  margin-bottom: 0;
-                  font-size: smaller;
-                "
-                for="remember_option"
-              >
-                <input id="remember_option" type="checkbox" /> Remember my
-                <span class="sr-only">login</span> choice for this computer
+              />
               </label>
             </div>
-            <div class="pull-right" style="text-align: right">
-              <button id="login" type="submit" class="btn btn-sm btn-light">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-circle-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-                  />
-                </svg>
-                Login
-              </button>
+            <div class="form-check ms-2 mb-0">
+              <input class="form-check-input" type="radio" name="idp_option" id="google_login" value="google_option">
+              <label class="form-check-label" for="google_login">
+              <img
+                  src="/img/google-2015-logo-96x32.png"
+                  alt="login with your Google account"
+                  class="img-fluid"
+              />
+                <p class="small mb-0 text-light">Log in with a non-UW account</p>
+              </label>
             </div>
           </div>
+          
+          <div class="form-check mb-3">
+            <input class="form-check-input" id="remember_option" type="checkbox" >
+            <label class="form-check-label" for="remember_option">
+              Remember my choice for this computer
+            </label>
+          </div>
+          
+          <div class="text-end">
+            <button id="login" type="submit" class="btn btn-sm btn-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                />
+              </svg>
+              Login
+            </button>
+          </div>
+              
+
         </form>
       </div>
     </div>
@@ -172,6 +146,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
+        /*
         $("input[name=idp_option]").change(function (ev) {
           if ($(this).val() == "google_option") {
             $("#social_login_container").hide();
@@ -187,6 +162,7 @@
           $("input[name=idp_option]").trigger("change");
           ev.preventDefault();
         });
+        */
         $("#login")
           .click(function (ev) {
             var selected_idp = $("input[name=idp_option]:checked").val();
