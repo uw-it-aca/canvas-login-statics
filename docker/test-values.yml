@@ -75,13 +75,13 @@ metrics:
     port: metrics
 
 readiness:
-  enabled: true
+  enabled: false
 
 lifecycle:
   enabled: true
 
 securityPolicy:
-  enabled: true
+  enabled: false
 
 labels:
   billing-code: "742"
