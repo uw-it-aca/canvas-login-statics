@@ -79,19 +79,18 @@
   <body>
     
     <div class="container mt-5">
-
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
+          <div class="rounded-3 shadow form-signin p-4 pt-5" role="main">
 
-          <div class="rounded-3 shadow form-signin p-4 pt-5" role="main" aria-labelledby="login_header">
+            <!-- begin content here -->
             <h1 class="visually-hidden" id="login_header">UW Canvas login</h1>
-
             <form class="mt-5">
 
               <p class="text-light">You are required to log into your account:</p>
 
-              <div class="d-flex justify-content-center my-5">
-                <div class="form-check me-2 mb-0">
+              <div class="d-flex flex-wrap justify-content-between my-5 mx-auto" style="width:95%;">
+                <div class="form-check mb-3">
                   <input class="form-check-input" type="radio" name="idp_option" id="uw_login" value="weblogin_option" checked>
                   <label class="form-check-label" for="uw_login">
                     <img
@@ -101,7 +100,7 @@
                   />
                   </label>
                 </div>
-                <div class="form-check ms-2 mb-0">
+                <div class="form-check mb-0">
                   <input class="form-check-input" type="radio" name="idp_option" id="google_login" value="google_option">
                   <label class="form-check-label" for="google_login">
                   <img
@@ -119,7 +118,7 @@
 
                 <div class="form-check mb-3">
                   <input class="form-check-input" id="remember_option" type="checkbox" >
-                  <label class="form-check-label text-light" for="remember_option">
+                  <label class="pe-3 text-light" for="remember_option">
                     Remember my choice for this computer
                   </label>
                 </div>

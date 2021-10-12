@@ -1,9 +1,8 @@
 body {
-    background: url("/img/bg.jpg");
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  }
+  background: url("/img/bg.jpg");
+}
 
-  .form-signin {
-    background: #4b2e83 url("/img/canvas_Wayf-logo.png") no-repeat 20px 20px;
-    background-size: 180px auto;
-  }
+.form-signin {
+  background: #4b2e83 url("/img/canvas_Wayf-logo.png") no-repeat 20px 20px;
+  background-size: 180px auto;
+}
