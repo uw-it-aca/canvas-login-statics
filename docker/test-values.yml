@@ -79,9 +79,6 @@ lifecycle:
 securityPolicy:
   enabled: false
 
-labels:
-  billing-code: "742"
-
 environmentVariables:
   - name: "ENV"
     value: "test"
