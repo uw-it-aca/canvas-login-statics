@@ -76,9 +76,6 @@ readiness:
 lifecycle:
   enabled: true
 
-labels:
-  billing-code: "742"
-
 environmentVariables:
   - name: "ENV"
     value: "prod"
