@@ -7,7 +7,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'index.html'),
-        wayf: resolve(__dirname, 'wayf/index.html'),
         unauthorized: resolve(__dirname, 'unauthorized-user/index.html'),
         unknown: resolve(__dirname, 'unknown-user/index.html')
       }
