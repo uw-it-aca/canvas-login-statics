@@ -18,6 +18,8 @@ ingress:
         - "/"
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
+    nginx.ingress.kubernetes.io/server-snippet: |
+      rewrite ^/wayf$ https://canvas.uw.edu/ permanent;
 
 repo: canvas-login-statics
 instance: prod
