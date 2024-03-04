@@ -68,10 +68,10 @@ jobs:
 
     needs: [context, build]
 
-    runs-on: ubuntu-22.04
-
     outputs:
       context: ${{ steps.context.outputs.context }}
+
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout Repo
