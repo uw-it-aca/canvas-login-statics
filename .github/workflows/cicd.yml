@@ -75,11 +75,11 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Deployment Pipeline
         if: >-
-          contains(fromJSON('["main", "develop"]'),
+          contains(fromJSON('["main"]'),
             needs.context.outputs.git_repo_branch)
         uses: uw-it-aca/actions/cicd-deploy@main
         with:
