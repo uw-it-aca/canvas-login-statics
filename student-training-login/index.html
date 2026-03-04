@@ -26,7 +26,7 @@
           canvas_login = document.getElementById('canvas_login');
           canvas_login.href = canvas_host;
 
-          student_training_host = "https://uwstudenttraining." + RegExp.$1 + ".instructure.com";
+          student_training_host = "https://uwstudenttraining." + RegExp.$1 + ".instructure.com/login/canvas";
           student_training_login = document.getElementById('student_training_login');
           student_training_login.href = student_training_host;
         }
@@ -44,7 +44,7 @@
             <div class="mt-5 text-dark">
               <h1 class="visually-hidden" id="login_header">Student Training Canvas Login</h1>
               <p class="h5 fw-bold mb-4">Student training login is restricted.</p>
-              <p>Qualified staff access is provided via <a id="student_training_login" href="">direct login</a>.</p>
+              <p>Qualified staff access is provided via <a id="student_training_login" href="https://uwstudenttraining.instructure.com/login/canvas">direct login</a>.</p>
               <p>UW student access is provided via <a id="canvas_login" href="https://canvas.uw.edu/">UW Canvas</a>.</p>
             </div>
 
