@@ -6,3 +6,9 @@ body {
   background: #4b2e83 url("/img/canvas_Wayf-logo.png") no-repeat 20px 20px;
   background-size: 180px auto;
 }
+
+.form-studenttraining-signin {
+  color: black;
+  background: #e2e2e2 url("/img/student-training.png") no-repeat 20px 20px;
+  background-size: 180px auto;
+}
