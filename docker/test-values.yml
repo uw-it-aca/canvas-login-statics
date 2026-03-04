@@ -21,6 +21,8 @@ ingress:
 
 repo: canvas-login-statics
 instance: test
+namespace:
+  enabled: true
 
 resources:
   limits:
