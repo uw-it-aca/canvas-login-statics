@@ -8,7 +8,8 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, 'index.html'),
         unauthorized: resolve(__dirname, 'unauthorized-user/index.html'),
-        unknown: resolve(__dirname, 'unknown-user/index.html')
+        unknown: resolve(__dirname, 'unknown-user/index.html'),
+        studenttraining: resolve(__dirname, 'student-training-login/index.html')
       }
     },
   }
