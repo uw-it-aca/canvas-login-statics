@@ -23,6 +23,8 @@ ingress:
 
 repo: canvas-login-statics
 instance: prod
+namespace:
+  enabled: true
 
 resources:
   limits:
