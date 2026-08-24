@@ -9,7 +9,7 @@ gateway:
     - test-login.canvas.uw.edu
   maxRequestSize: 256Ki
   rewriteRedirect:
-    pathMatchRegex: "^/wayf$"
+    pathRegex: "^/wayf$"
     redirectHostname: canvas.uw.edu
     redirectPath: /
 
