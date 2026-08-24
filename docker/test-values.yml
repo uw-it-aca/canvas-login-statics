@@ -3,6 +3,12 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 2
 
+gateway:
+  enabled: true
+  hostnames:
+    - test-login.canvas.uw.edu
+  maxRequestSize: 256Ki
+
 ingress:
   enabled: true
   type: nginx
