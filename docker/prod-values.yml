@@ -9,9 +9,9 @@ gateway:
     - login.canvas.uw.edu
   maxRequestSize: 256Ki
   rewriteRedirect:
-    pathMatchRegex: "^/wayf$"
+    pathRegex: "^/wayf$"
     redirectHostname: canvas.uw.edu
-    redirectPath: "/"
+    redirectPath: /
 
 repo: canvas-login-statics
 instance: prod
