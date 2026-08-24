@@ -3,6 +3,16 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 2
 
+gateway:
+  enabled: true
+  hostnames:
+    - login.canvas.uw.edu
+  maxRequestSize: 256Ki
+  rewriteRedirect:
+    pathMatchRegex: "^/wayf$"
+    redirectHostname: canvas.uw.edu
+    redirectPath: "/"
+
 ingress:
   enabled: true
   type: nginx
