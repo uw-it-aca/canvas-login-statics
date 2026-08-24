@@ -9,22 +9,6 @@ gateway:
     - test-login.canvas.uw.edu
   maxRequestSize: 256Ki
 
-ingress:
-  enabled: true
-  type: nginx
-  tls:
-    canvas-static:
-      secretName: test-login.canvas.uw.edu-ingress-cert
-      hosts:
-        - test-login.canvas.uw.edu
-  hosts:
-    canvas-static:
-      host: test-login.canvas.uw.edu
-      paths:
-        - "/"
-  annotations:
-    cert-manager.io/cluster-issuer: letsencrypt
-
 repo: canvas-login-statics
 instance: test
 namespace:
